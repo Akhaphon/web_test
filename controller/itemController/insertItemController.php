@@ -1,7 +1,6 @@
 <?php
 include '../../model/mydb.php';
 
-$itemID = $_POST['itemID'];
 $itemName = $_POST['itemName'];
 $itemAmount = $_POST['itemAmount'];
 

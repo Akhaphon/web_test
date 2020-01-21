@@ -11,9 +11,9 @@
         <input type="submit" value="ค้นหา">
     </form>
     <?php
-    // include '../../controller/itemController/showItemController.php';
     include '../../controller/itemController/showItemController.php';
-    showManyItem($_POST['id']);
+    $sn = $_POST['id'];
+    showOneItem($sn);
     ?>
 </body>
 
