@@ -7,7 +7,7 @@
 
 <body>
     แก้ไขข้อมูลสมาชิก<br>
-    <form action="../../controller/EditProfileController.php" method="post">
+    <form action="../../controller/profileController/EditProfileController.php" method="post">
         ชื่อผู้ใช้: <input type="text" name="user"><br>
         ระหัสผ่าน: <input type="text" name="passwd"><br>
         ชื่อผู้ใช้ใหม่: <input type="text" name="newUser"><br>
