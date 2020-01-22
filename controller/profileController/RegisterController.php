@@ -11,3 +11,12 @@ $sql = "insert into profile(user, email, passwd)
         values('$user','$email','$passwd')";
 $db->insertDB($sql);
 ?>
+<!DOCType html>
+<html>
+        <head>
+                <meta charset="utf-8">
+        </head>
+        <body>
+                <a href="../../view/Home.php">หน้าหลัก</a>
+        </body>
+</html>

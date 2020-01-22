@@ -43,11 +43,25 @@ class mydb{
         $result = $this->conn->query($sql);
         if($result->num_rows > 0){
             while($row = $result->fetch_assoc()){
-                return $row['$result'] . " " ;
+                echo $row["id"] . " " . $row["user"] . $row["email"] . "<br>" ;
             }
         }else{
             // echo " results";
-            return $row;
+            echo "is null";
+        }
+        $this->conn->close();
+    }
+
+    function login($sql){
+        $result = $this->conn->query($sql);
+        $objResult = $result->fetch_array(MYSQLI_NUM);
+        if(!$objResult){
+            echo "usrname name and password Incorrect!";
+        }else{
+            $_SESSION["userID"] = $objResult["id"];
+            $_SESSION["passwd"] = $objResult["passwd"];
+
+            session_write_close();
         }
         $this->conn->close();
     }

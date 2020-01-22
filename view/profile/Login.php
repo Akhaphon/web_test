@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
 </head>
+
 <body>
-    <form action="../../controller/profileController/LoginController.php" method="post">
-        User name or Email:<input type="text" name="UserOrEmail"><br>
-        Password:<input type="text" name="Password"><br>
-        <input type="submit" value="เข้าสู่ระบบ">
+
+    <form name="form1" method="post" action="../../controller/profileController/LoginController.php">
+        Login<br>
+        <table border="1" style="width: 300px">
+            <tbody>
+                <tr>
+                    <td> &nbsp;Username</td>
+                    <td>
+                        <input name="txtUsername" type="text" id="txtUsername">
+                    </td>
+                </tr>
+                <tr>
+                    <td> &nbsp;Password</td>
+                    <td><input name="txtPassword" type="password" id="txtPassword">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <input type="submit" name="Submit" value="Login">
     </form>
-    <a href="Register.php">สมัครสมาชิก</a>
 </body>
+
 </html>

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-</head>5
+</head>
 
 <body>
     <form action="../../controller/profileController/RegisterController.php" method="post">
